@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { CopyBlock } from 'react-code-blocks'
 import Link from 'next/link'
-import example01 from './example01'
+import example01 from '../../../components/examples/class/01'
 
 export default function Clases() {
   return (

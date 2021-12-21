@@ -1,11 +1,9 @@
-import Head from 'next/head'
-
 export default function Footer() {
   return (
-      <footer>
-        Powered by siturra
-        
-        <style jsx>{` 
+    <footer>
+      Powered by siturra
+      <style jsx>
+        {`
           footer {
             width: 100%;
             height: 100px;
@@ -18,9 +16,8 @@ export default function Footer() {
           footer img {
             margin-left: 0.5rem;
           }
-          `}
-        </style>
-      </footer>
-
+        `}
+      </style>
+    </footer>
   )
 }
