@@ -1,7 +1,9 @@
+import Link from 'next/link'
+
 export default function Footer() {
   return (
     <footer>
-      Powered by siturra
+      <Link href="https://github.com/siturra/pensandoelnombre">Contribuir en Github</Link>
       <style jsx>
         {`
           footer {

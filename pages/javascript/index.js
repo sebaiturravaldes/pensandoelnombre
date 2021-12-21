@@ -10,13 +10,28 @@ export default function JavaScript() {
       </Head>
 
       <main>
-        <h1 className="title">Bienvenido a aprender JavaScript</h1>
+        <Link href="/">Volver</Link>
+        <h1>Bienvenido a aprender JavaScript</h1>
+
+        <p>
+          Este tutorial, tiene como objetivo enseñar de una forma sencilla y resumida lo que es
+          JavaScript y como utilizarlo, si deseas profundizar más en el lenguaje, puedes aprender
+          desde su url oficial, https://developer.mozilla.org/es/docs/Web/JavaScript
+        </p>
+
+        {/* <p>Fundamentos</p> */}
         <ul>
+          <li>
+            <Link href="/javascript/comentarios">Comentarios</Link>
+          </li>
           <li>
             <Link href="/javascript/declaracion">Declaración</Link>
           </li>
           <li>
             <Link href="/javascript/asignacion">Asignación</Link>
+          </li>
+          <li>
+            <Link href="/javascript/funciones">Condicionales</Link>
           </li>
           <li>
             <Link href="/javascript/funciones">Función</Link>
