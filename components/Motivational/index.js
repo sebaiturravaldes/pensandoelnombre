@@ -5,6 +5,7 @@ const phrases = [
   '¿Qué debes hacer cuando estas contra la pared?, ¡Romper la maldita pared!.', //SUITS
   'A veces las personas que todos piensan que no harán nada, son las que hacen cosas que nadie había imaginado.', // Alan turing
   'Nunca es tarde.',
+  'pasito a pasito.',
   'Nos levantamos día tras día a cambiar el mundo, eso es lo que hacemos.'
 ]
 
