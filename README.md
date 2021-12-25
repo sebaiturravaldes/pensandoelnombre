@@ -2,6 +2,8 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
 TODO
 
+- [] Responsive
+- [] Inclusivo
 - [] Implementar login
 - [] Implementar sistema de ejercicios
 - [] Diagrama de arquitectura

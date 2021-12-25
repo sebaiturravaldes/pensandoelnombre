@@ -4,7 +4,6 @@ import example01 from '../../../../components/examples/comments/1'
 export default function Page() {
   return (
     <div>
-      Ejemplo:
       <CopyBlock
         text={example01}
         theme="dracula"

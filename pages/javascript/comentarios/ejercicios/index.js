@@ -1,7 +1,10 @@
 export default function Page() {
   return (
     <div>
-      <p>En el editor de código escribamos comentarios utilizando // y /* */</p>
+      <h2>1)</h2>
+      <p>En el editor de código escribamos comentarios utilizando // </p>
+      <h2>2)</h2>
+      <p>En el editor de código escribamos comentarios utilizando /* */</p>
     </div>
   )
 }
