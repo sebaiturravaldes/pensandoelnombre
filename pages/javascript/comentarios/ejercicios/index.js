@@ -1,4 +1,4 @@
-export default function Example() {
+export default function Page() {
   return (
     <div>
       Ejercicio:
@@ -6,3 +6,6 @@ export default function Example() {
     </div>
   )
 }
+
+Page.layout = 'Course'
+Page.title = 'Ejercicios'

@@ -17,4 +17,4 @@ export default function Page() {
 }
 
 Page.layout = 'Course'
-Page.first = 'Course'
+Page.title = 'Ejemplo'

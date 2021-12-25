@@ -10,7 +10,7 @@ export default function JavaScript() {
       </Head>
 
       <main>
-        <Link href="/">Volver</Link>
+        <Link href="/">Volver al inicio</Link>
         <h1>Bienvenido a aprender JavaScript</h1>
 
         <div className="container">

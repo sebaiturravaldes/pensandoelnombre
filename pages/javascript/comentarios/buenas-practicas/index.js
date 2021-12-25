@@ -1,7 +1,6 @@
 export default function Page() {
   return (
     <div>
-      Buenas prácticas:
       <p>
         A continuación podrás encontrar un listado de buenas prácticas al momento de utilizar
         comentarios
@@ -29,4 +28,5 @@ export default function Page() {
   )
 }
 
-Page.layout = 'Default'
+Page.layout = 'Course'
+Page.title = 'Buenas prácticas'

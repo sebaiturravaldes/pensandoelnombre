@@ -3,7 +3,7 @@ import Course from './Course'
 
 export default function Layouts(props) {
   const { layout = 'Default' } = props
-  console.log('props', props)
+
   const layouts = {
     Default,
     Course

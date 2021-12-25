@@ -1,6 +1,9 @@
 import Link from 'next/link'
+import Breadcrumbs from './Breadcrumbs'
 
-export default function Course({ children }) {
+export default function Course(props) {
+  const { title, children } = props
+
   return (
     <div className="content">
       <div className="sidebar">
@@ -11,7 +14,10 @@ export default function Course({ children }) {
         <Link href="/javascript/comentarios/referencias">Referencias</Link>
       </div>
 
-      <main>{children}</main>
+      <main>
+        <Breadcrumbs title={title} />
+        {children}
+      </main>
     </div>
   )
 }

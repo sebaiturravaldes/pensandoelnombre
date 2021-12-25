@@ -1,4 +1,4 @@
-export default function Example() {
+export default function Page() {
   return (
     <div>
       Referencias:
@@ -8,3 +8,5 @@ export default function Example() {
     </div>
   )
 }
+Page.layout = 'Course'
+Page.title = 'Referencias'
