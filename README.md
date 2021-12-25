@@ -4,3 +4,20 @@ TODO
 
 - [] Implementar login
 - [] Implementar sistema de ejercicios
+- [] Diagrama de arquitectura
+
+# Arquitectura
+
+## Layout
+
+Layouts disponibles:
+
+- Default
+- Courses
+
+## Usando los Layouts
+
+```js
+export default function Page() {}
+Page.layout = 'Default'
+```
