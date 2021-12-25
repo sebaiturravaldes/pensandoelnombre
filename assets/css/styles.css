@@ -4,10 +4,13 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  word-break: break-all;
 }
 
 .content {
   display: flex;
+  flex-direction: row;
 }
 
 .sidebar {
@@ -22,6 +25,12 @@ main {
 }
 
 @media (max-width: 700px) {
+  .sidebar {
+    padding: 0;
+  }
+  .content {
+    flex-direction: column;
+  }
   main {
     width: 100%;
   }
