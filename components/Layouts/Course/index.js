@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import ActiveLink from './ActiveLink'
 import Breadcrumbs from './Breadcrumbs'
 
 export default function Course(props) {
@@ -7,11 +7,11 @@ export default function Course(props) {
   return (
     <div className="content">
       <div className="sidebar">
-        <Link href="/javascript/comentarios">Concepto</Link>
-        <Link href="/javascript/comentarios/ejemplo">Ejemplo</Link>
-        <Link href="/javascript/comentarios/ejercicios">Ejercicios</Link>
-        <Link href="/javascript/comentarios/buenas-practicas">Buenas prácticas</Link>
-        <Link href="/javascript/comentarios/referencias">Referencias</Link>
+        <ActiveLink href="/javascript/comentarios">Concepto</ActiveLink>
+        <ActiveLink href="/javascript/comentarios/ejemplo">Ejemplo</ActiveLink>
+        <ActiveLink href="/javascript/comentarios/ejercicios">Ejercicios</ActiveLink>
+        <ActiveLink href="/javascript/comentarios/buenas-practicas">Buenas prácticas</ActiveLink>
+        <ActiveLink href="/javascript/comentarios/referencias">Referencias</ActiveLink>
       </div>
 
       <main>
