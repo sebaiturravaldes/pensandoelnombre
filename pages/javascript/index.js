@@ -23,6 +23,9 @@ export default function JavaScript() {
           {/* <p>Fundamentos</p> */}
           <ul>
             <li>
+              <Link href="/javascript/introduccion">Introducción</Link>
+            </li>
+            <li>
               <Link href="/javascript/comentarios">Comentarios</Link>
             </li>
             <li>

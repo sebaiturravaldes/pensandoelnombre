@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Concept from './concepto'
 
 const title = 'Comentarios'
 
-export default function Comments() {
+export default function Page() {
   const router = useRouter()
   console.log('router:', router)
 
@@ -15,15 +16,11 @@ export default function Comments() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <sidebar>
-        <Link href="/javascript/comentarios">Concepto</Link>
-        <Link href="/javascript/comentarios/ejemplo">Ejemplo</Link>
-        <Link href="/javascript/comentarios/ejercicios">Ejercicios</Link>
-        <Link href="/javascript/comentarios/buenas-practicas">Buenas prácticas</Link>
-        <Link href="/javascript/comentarios/referencias">Referencias</Link>
-      </sidebar>
-
-      <main></main>
+      <main>
+        <Concept />
+      </main>
     </div>
   )
 }
+
+Page.layout = 'Course'

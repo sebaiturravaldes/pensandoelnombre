@@ -1,7 +1,7 @@
 import { CopyBlock } from 'react-code-blocks'
 import example01 from '../../../../components/examples/comments/1'
 
-export default function Example() {
+export default function Page() {
   return (
     <div>
       Ejemplo:
@@ -15,3 +15,6 @@ export default function Example() {
     </div>
   )
 }
+
+Page.layout = 'Course'
+Page.first = 'Course'

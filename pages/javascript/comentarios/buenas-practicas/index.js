@@ -1,4 +1,4 @@
-export default function BestPractices() {
+export default function Page() {
   return (
     <div>
       Buenas prácticas:
@@ -28,3 +28,5 @@ export default function BestPractices() {
     </div>
   )
 }
+
+Page.layout = 'Default'
