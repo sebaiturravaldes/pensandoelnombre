@@ -5,6 +5,7 @@ TODO
 - [] Responsive
 - [] Inclusivo
 - [] Implementar login
+- [] Implementar editor de código
 - [] Implementar sistema de ejercicios
 - [] Diagrama de arquitectura
 
