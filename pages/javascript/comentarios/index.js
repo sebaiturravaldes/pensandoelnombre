@@ -1,7 +1,16 @@
+import course from 'src/services/course'
 import Head from 'next/head'
 
-function Page() {
-  return (
+export default course({
+  title: 'Javascript',
+  layout: 'Course',
+  basePath: '/javascript/comentarios',
+  concept: true,
+  example: true,
+  exercises: true,
+  bestPractices: true,
+  references: true,
+  page: () => (
     <div className="content">
       <Head>
         <title>JavaScript - Comentarios</title>
@@ -25,9 +34,4 @@ function Page() {
       </main>
     </div>
   )
-}
-
-Page.layout = 'Course'
-Page.title = 'Concepto'
-
-export default Page
+})

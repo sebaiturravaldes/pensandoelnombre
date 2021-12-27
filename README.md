@@ -24,3 +24,9 @@ Layouts disponibles:
 export default function Page() {}
 Page.layout = 'Default'
 ```
+
+# Plataformas de ejercicios
+
+https://codingbat.com/help.html
+https://the-winter.github.io/codingjs/
+https://codingbat.com/python

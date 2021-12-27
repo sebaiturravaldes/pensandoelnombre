@@ -4,7 +4,7 @@ import styles from './Editor.module.css'
 import PropTypes from 'prop-types'
 
 function Editor(props) {
-  const { preview, run, response, height } = props
+  const { preview, run, defaultResponse, handleResponse, height } = props
   const [showResponse, setShowResponse] = useState(false)
   const editorRef = useRef(null)
 
@@ -56,7 +56,7 @@ function Editor(props) {
                 enabled: false
               }
             }}
-            defaultValue="//Soy un comentario"
+            defaultValue={defaultResponse}
           />
         </div>
       ) : null}
@@ -67,7 +67,9 @@ function Editor(props) {
         ) : (
           <button onClick={() => setShowResponse(true)}>Mostrar respuesta</button>
         )}
-        <button onClick={() => response(editorRef.current.getValue())}>Enviar respuesta</button>
+        <button onClick={() => handleResponse(editorRef.current.getValue())}>
+          Enviar respuesta
+        </button>
       </div>
     </div>
   )
@@ -83,7 +85,8 @@ Editor.propTypes = {
   height: PropTypes.string,
   preview: PropTypes.bool,
   run: PropTypes.bool,
-  response: PropTypes.func
+  defaultResponse: PropTypes.string,
+  handleResponse: PropTypes.func
 }
 
 export default Editor

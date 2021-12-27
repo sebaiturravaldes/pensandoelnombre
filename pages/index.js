@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Footer from '../components/Footer'
+import Footer from 'src/components/Footer'
 import Link from 'next/link'
-import Motivational from '../components/Motivational'
+import Motivational from 'src/components/Motivational'
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Pensandoelnombre!</a>
+          Welcome to <a href="https://nextjs.org">Codificontigo!</a>
         </h1>
 
         <div className="grid">

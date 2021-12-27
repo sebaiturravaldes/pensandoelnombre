@@ -1,5 +1,5 @@
-import Code from '../../../../components/Code'
-import example01 from '../../../../components/examples/comments/1'
+import Code from 'src/components/Code'
+import example01 from 'src/components/examples/comments/1'
 
 export default function Page() {
   return (
