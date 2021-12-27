@@ -7,5 +7,7 @@ export default function Page() {
     </div>
   )
 }
+
 Page.layout = 'Course'
-Page.title = 'Referencias'
+Page.lesson = 'comentarios'
+Page.page = 'Referencias'

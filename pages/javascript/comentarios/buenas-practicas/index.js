@@ -29,4 +29,5 @@ export default function Page() {
 }
 
 Page.layout = 'Course'
-Page.title = 'Buenas prácticas'
+Page.lesson = 'comentarios'
+Page.page = 'Buenas Prácticas'

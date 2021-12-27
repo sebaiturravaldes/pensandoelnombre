@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { defaultPath, lessons } from 'src/courses/javascript'
 
-export default function JavaScript() {
+export default function Page() {
   return (
     <div className="container">
       <Head>
@@ -22,30 +23,11 @@ export default function JavaScript() {
 
           {/* <p>Fundamentos</p> */}
           <ul>
-            <li>
-              <Link href="/javascript/introduccion">Introducción</Link>
-            </li>
-            <li>
-              <Link href="/javascript/comentarios">Comentarios</Link>
-            </li>
-            <li>
-              <Link href="/javascript/declaracion">Declaración</Link>
-            </li>
-            <li>
-              <Link href="/javascript/asignacion">Asignación</Link>
-            </li>
-            <li>
-              <Link href="/javascript/funciones">Condicionales</Link>
-            </li>
-            <li>
-              <Link href="/javascript/funciones">Función</Link>
-            </li>
-            <li>
-              <Link href="/javascript/ciclos">Ciclos</Link>
-            </li>
-            <li>
-              <Link href="/javascript/clases">Clase</Link>
-            </li>
+            {Object.values(lessons).map((lesson, index) => (
+              <li key={index}>
+                <Link href={defaultPath + lesson.path}>{lesson.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
       </main>

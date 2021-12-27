@@ -17,4 +17,5 @@ export default function Page() {
 }
 
 Page.layout = 'Course'
-Page.title = 'Ejemplo'
+Page.lesson = 'declaracion'
+Page.page = 'Ejemplo'

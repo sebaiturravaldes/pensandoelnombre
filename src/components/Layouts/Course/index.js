@@ -1,33 +1,32 @@
 import ActiveLink from './ActiveLink'
-import Breadcrumbs from './Breadcrumbs'
+import Head from 'next/head'
+import Link from 'next/link'
+import { defaultPath, title, lessons } from 'src/courses/javascript'
 
 export default function Course(props) {
-  const {
-    title,
-    subTitle,
-    basePath,
-    concept,
-    example,
-    exercises,
-    bestPractices,
-    references,
-    children
-  } = props
+  const { lesson, page, children } = props
+
+  const { name, path, pages } = lessons[lesson]
 
   return (
     <div className="content">
+      <Head>
+        <title>
+          {title} - {name}
+        </title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <div className="sidebar">
-        {concept ? <ActiveLink href={`${basePath}`}>Concepto</ActiveLink> : null}
-        {example ? <ActiveLink href={`${basePath}/ejemplo`}>Ejemplo</ActiveLink> : null}
-        {exercises ? <ActiveLink href={`${basePath}/ejercicios`}>Ejercicios</ActiveLink> : null}
-        {bestPractices ? (
-          <ActiveLink href={`${basePath}/buenas-practicas`}>Buenas prácticas</ActiveLink>
-        ) : null}
-        {references ? <ActiveLink href={`${basePath}/referencias`}>Referencias</ActiveLink> : null}
+        {pages.map(page => (
+          <ActiveLink href={`${defaultPath}${path}${page.path}`}>{page.name}</ActiveLink>
+        ))}
       </div>
 
       <main>
-        <Breadcrumbs title={title} subTitle={subTitle} />
+        <h1 className="title">
+          <Link href={defaultPath}>{title}</Link> ~ {name} ~ {page}
+        </h1>
         {children}
       </main>
     </div>

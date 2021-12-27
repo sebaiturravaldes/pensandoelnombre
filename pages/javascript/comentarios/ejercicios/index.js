@@ -52,4 +52,5 @@ export default function Page() {
 }
 
 Page.layout = 'Course'
-Page.title = 'Ejercicios'
+Page.lesson = 'comentarios'
+Page.page = 'Ejercicios'

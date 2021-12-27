@@ -1,22 +1,16 @@
 export default function course({
-  layout,
-  title,
-  basePath,
-  concept,
-  example,
-  exercises,
-  bestPractices,
-  references,
-  page // function
+  Page, // React Component
+  ...props
 }) {
-  page.title = title
-  page.layout = layout
-  page.basePath = basePath
-  page.concept = concept
-  page.example = example
-  page.exercises = exercises
-  page.bestPractices = bestPractices
-  page.references = references
+  if (props.hasOwnProperty('name')) {
+    throw new Error("Can't use the `name` property.")
+  }
 
-  return page
+  const result = Page
+
+  for (const property in props) {
+    result[property] = props[property]
+  }
+
+  return result
 }

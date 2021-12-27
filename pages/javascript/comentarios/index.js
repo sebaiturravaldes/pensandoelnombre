@@ -1,22 +1,6 @@
-import course from 'src/services/course'
-import Head from 'next/head'
-
-export default course({
-  title: 'Javascript',
-  layout: 'Course',
-  basePath: '/javascript/comentarios',
-  concept: true,
-  example: true,
-  exercises: true,
-  bestPractices: true,
-  references: true,
-  page: () => (
+export default function Page() {
+  return (
     <div className="content">
-      <Head>
-        <title>JavaScript - Comentarios</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main>
         <div>
           <p>Los comentarios, se pueden utilizar para explicar el código y hacerlo más legible.</p>
@@ -34,4 +18,8 @@ export default course({
       </main>
     </div>
   )
-})
+}
+
+Page.layout = 'Course'
+Page.lesson = 'comentarios'
+Page.page = 'Concepto'
