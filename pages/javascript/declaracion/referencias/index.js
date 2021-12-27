@@ -14,4 +14,5 @@ export default function Page() {
   )
 }
 Page.layout = 'Course'
-Page.title = 'Referencias'
+Page.lesson = 'declaracion'
+Page.page = 'Referencias'
