@@ -22,10 +22,12 @@ export const lessons = {
         name: 'Ejercicios',
         path: '/ejercicios'
       },
+      /*
       {
         name: 'Buenas Prácticas',
         path: '/buenas-practicas'
       },
+      */
       {
         name: 'Referencias',
         path: '/referencias'
@@ -33,16 +35,31 @@ export const lessons = {
     ]
   },
   declaracion: {
-    name: 'Declaración',
-    path: '/declaracion',
+    name: 'Declaración y Asignación',
+    path: '/declaracion-y-asignacion',
     pages: [
       {
         name: 'Concepto',
         path: ''
       },
+      /*
       {
         name: 'Ejemplo',
         path: '/ejemplo'
+      },*/
+      {
+        name: 'Ejercicios',
+        path: '/ejercicios'
+      },
+      /*
+      {
+        name: 'Buenas Prácticas',
+        path: '/buenas-practicas'
+      },
+      */
+      {
+        name: 'Referencias',
+        path: '/referencias'
       }
     ]
   }
